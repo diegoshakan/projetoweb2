@@ -1,0 +1,34 @@
+<h3>Login no sistema</h3>
+
+<form (ngSubmit)="onLogin()">
+  <table>
+    <tr>
+      <td>Usuário: </td>
+      <div class="ui-g-12 ui-md-4">
+          <div class="ui-inputgroup">
+              <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+              <input type="text" pInputText placeholder="Username" name="usuario" [(ngModel)]="usuario">         
+          </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Senha:</td>
+      <div class="ui-g-12 ui-md-4">
+          <div class="ui-inputgroup">
+              <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+              <input type="password" pInputText placeholder="Password" name="senha" [(ngModel)]="senha">         
+          </div>
+      </div>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: right">
+        <button pButton type="submit" class="ui-button-secundary" label="Entrar"></button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center">
+        {{ mensagemErro }}
+      </td>
+    </tr>
+  </table>
+</form>
