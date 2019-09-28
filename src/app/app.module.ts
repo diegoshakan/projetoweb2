@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

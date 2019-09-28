@@ -1,3 +1,22 @@
-<p>
-  todo-list works!
-</p>
+<h3>Este é seu espaço de tarefas à fazer!</h3>
+
+<ul>
+  <li *ngFor="let task of tasks"> 
+    {{task}} <button pButton type="button" label="Remove" (click)="removeTask(task)"></button>
+
+  </li>
+</ul>
+
+{{ task }}
+
+<div class="ui-g-12 ui-md-4">
+    <div class="ui-inputgroup">
+      <label for="float-input">Descrição</label>
+      <div class="ui-inputgroup">
+        <textarea [rows]="5" [cols]="30" pInputTextarea [(ngModel)]="todo" autoResize="autoResize"></textarea>      
+      </div>
+  </div>
+</div>
+<button pButton type="button" label="Adicionar" (click)="addTask()"></button>
+
+

@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoListComponent implements OnInit {
 
-  constructor() { }
+  public todo = "";
+  public tasks = []
 
   ngOnInit() {
+  }
+
+  addTask() {
+    this.tasks.push(this.todo);
+  }
+
+  removeTask(todo) {
+    this.tasks.splice(this.tasks.indexOf(todo), 1);
   }
 
 }

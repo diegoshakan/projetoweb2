@@ -1,5 +1,18 @@
 # Todo
 
+## Rodando o projeto na sua máquina
+
+Run `nmp install` after clone or download project.
+
+## Coisas para melhorar
+* Criar um edit, o projeto só adiciona e remove, por enquanto;
+* Não consegui fazer o primeface (primeNG) funcionar na minha máquina,
+todos os inputs e botões estão configurados já para funcionar o framework.
+Mas não estão funcionando;
+* Criar um serviço para adicionar, remover e editar tasks;
+* Criar um modelo de Tasks (Title(string), Description (TextArea), Finished (boolean);
+* Precisa melhoar o layout.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
 ## Development server
