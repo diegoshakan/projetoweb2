@@ -4,6 +4,10 @@
 
 Run `nmp install` after clone or download project.
 
+## Acesso
+usuário: user
+senha: 111
+
 ## Coisas para melhorar
 * Criar um edit, o projeto só adiciona e remove, por enquanto;
 * Não consegui fazer o primeface (primeNG) funcionar na minha máquina,
