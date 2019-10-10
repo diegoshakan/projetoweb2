@@ -9,12 +9,14 @@ import { LoginComponent } from './login/login.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    TodoListComponent
+    TodoListComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

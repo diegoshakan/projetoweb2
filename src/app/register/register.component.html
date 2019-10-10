@@ -1,0 +1,36 @@
+<h3>Registro no Sistema</h3>
+
+<form (ngSubmit)="register()">
+  <table>
+    <tr>
+      <td colspan="2" style="text-align: center">
+        {{ mensagem }}
+      </td>
+    </tr>
+    <tr>
+      <td>Usuário: </td>
+      <div class="ui-g-12 ui-md-4">
+          <div class="ui-inputgroup">
+              <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+              <input type="text" pInputText placeholder="Username" name="username" 
+                  [(ngModel)]="username" autofocus autocomplete="username">         
+          </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Senha:</td>
+      <div class="ui-g-12 ui-md-4">
+          <div class="ui-inputgroup">
+              <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+              <input type="password" pInputText placeholder="Password" name="password" 
+                  [(ngModel)]="password">         
+          </div>
+      </div>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: right">
+        <button pButton type="submit" class="ui-button-secundary" label="Cadastrar"></button>
+      </td>
+    </tr>
+  </table>
+</form>

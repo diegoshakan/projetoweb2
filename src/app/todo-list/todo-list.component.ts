@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class TodoListComponent implements OnInit {
 
   public todo = "";
-  public tasks = []
+  task = null;
+  public tasks = [];
 
   ngOnInit() {
   }
@@ -21,4 +22,14 @@ export class TodoListComponent implements OnInit {
     this.tasks.splice(this.tasks.indexOf(todo), 1);
   }
 
+  editTask(t) {
+    this.task = t;
+  }
+
+  editar() {
+    const index = this.tasks.indexOf(this.task);
+    this.tasks.splice(index, 1, this.task);
+    this.task = null;
+
+  }
 }

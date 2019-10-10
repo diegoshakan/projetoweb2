@@ -1,5 +1,11 @@
 <h3>Login no sistema</h3>
 
+<tr>
+  <td colspan="2" style="text-align: center">
+    {{ mensagemErro }}
+  </td>
+</tr>
+
 <form (ngSubmit)="onLogin()">
   <table>
     <tr>
@@ -25,10 +31,10 @@
         <button pButton type="submit" class="ui-button-secundary" label="Entrar"></button>
       </td>
     </tr>
-    <tr>
-      <td colspan="2" style="text-align: center">
-        {{ mensagemErro }}
-      </td>
-    </tr>
+    <td colspan="2" style="text-align: right" >
+      <a href="/register">
+        <button pButton type="button" class="ui-button-secundary" label="Registrar"></button>
+      </a>
+    </td>
   </table>
 </form>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../service/login/login.service';
+import { User } from '../model/user';
 
 
 
@@ -21,7 +22,8 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-    if (this.loginService.onLogin(this.usuario, this.senha)) {
+    const user: User = {username: this.usuario, password: this.senha}
+    if (this.loginService.onLogin(user)) {
       this.mensagemErro = '';
       this.router.navigate(['/todo-list']);
     } else {
