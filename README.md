@@ -10,7 +10,7 @@ senha: 111
 
 ## Coisas para melhorar
 * Criar um modelo de Tasks (Title(string), Description (TextArea), Finished (boolean);
-* Precisa melhoar o layout.
+* Precisa melhorar o layout.
 
 ## Funcionalidades
 * Criar um novo usuário;
