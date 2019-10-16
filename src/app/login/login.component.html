@@ -12,7 +12,7 @@
       <td>Usuário: </td>
       <div class="ui-g-12 ui-md-4">
           <div class="ui-inputgroup">
-              <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+              <span class="ui-inputgroup-addon"><i class="pi pi-user" style="line-height: 1.25;"></i></span>
               <input type="text" pInputText placeholder="Username" name="usuario" [(ngModel)]="usuario">         
           </div>
       </div>
@@ -21,7 +21,7 @@
       <td>Senha:</td>
       <div class="ui-g-12 ui-md-4">
           <div class="ui-inputgroup">
-              <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+              <span class="ui-inputgroup-addon"><i class="pi pi-lock"></i></span>
               <input type="password" pInputText placeholder="Password" name="senha" [(ngModel)]="senha">         
           </div>
       </div>
@@ -31,10 +31,12 @@
         <button pButton type="submit" class="ui-button-secundary" label="Entrar"></button>
       </td>
     </tr>
+    <tr>
     <td colspan="2" style="text-align: right" >
       <a href="/register">
         <button pButton type="button" class="ui-button-secundary" label="Registrar"></button>
       </a>
     </td>
+    </tr>
   </table>
 </form>
