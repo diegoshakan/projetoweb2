@@ -1,0 +1,92 @@
+.titulo-tarefas {
+	text-align: center;
+	margin-bottom: 50px;
+	color: #333;
+	font-weight: 600;
+	font-size: 1.4em;
+}
+
+.lista-tarefas {
+	list-style: none;
+	width: 800px;
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.text-sem-tarefa {
+	text-align: center;
+	font-size: 1.6em;
+	color: #333;
+	font-weight: 600;
+}
+
+.lista-tarefas .box-item {
+	width: 100%;
+	max-width: 100%;
+	padding: 8px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.box-item .btn-remove-task {
+	align-self: center;
+	color: rgb(218, 76, 76);
+	font-weight: 700;
+	font-size: 1em;
+	margin-right: 6px;
+	cursor: pointer;
+}
+.box-item .btn-remove-task:hover {
+	color: red;
+}
+
+.box-item input {
+	height: 40px;
+	width: 300px;
+	border: 1px solid rgba(33, 65, 248, 0.1);
+	border-radius: 5px 0 0 5px;
+	padding-left: 10px;
+}
+
+.box-item button {
+	width: 100px;
+	height: 40px;
+	color: #fff;
+	background-color: rgb(33, 65, 248);
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 0.9em;
+}
+
+.box-nova-tarefa {
+	width: 500px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.box-nova-tarefa textarea {
+	width: 100%;
+	max-width: 100%;
+	height: 110px;
+	padding: 8px 0 0 15px;
+}
+
+.box-nova-tarefa button {
+	width: 150px;
+	height: 40px;
+	color: #fff;
+	background-color: rgb(33, 65, 248);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight: 700;
+	display: block;
+	margin: 0 auto;
+}

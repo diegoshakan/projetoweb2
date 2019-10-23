@@ -1,13 +1,12 @@
-<h3>Este é seu espaço de tarefas à fazer!</h3>
 
-<div #edit class="edit" *ngIf="task !== null">
+<!---<div #edit class="edit" *ngIf="task !== null">
   <textarea [rows]="5" [cols]="30" pInputTextarea [(ngModel)]="task" autoResize="autoResize">{{ task }}</textarea>
-  <button pButton label="editar" (click)="editar()"></button>  
+  <button pButton label="editar" (click)="editar()"></button>
 </div>
 
 <ul>
-  <li *ngFor="let task of tasks"> 
-    {{task}} 
+  <li *ngFor="let task of tasks">
+    {{task}}
     <button pButton type="button" label="Remover" (click)="removeTask(task)"></button>
     <button pButton type="button" label="Editar" (click)="editTask(task)"></button>
 
@@ -18,10 +17,34 @@
     <div class="ui-inputgroup">
       <label for="float-input">Descrição</label>
       <div class="ui-inputgroup">
-        <textarea [rows]="5" [cols]="30" pInputTextarea [(ngModel)]="todo" autoResize="autoResize"></textarea>      
+        <textarea [rows]="5" [cols]="30" pInputTextarea [(ngModel)]="todo" autoResize="autoResize"></textarea>
       </div>
   </div>
 </div>
 <button pButton type="button" label="Adicionar" (click)="addTask()"></button>
+-->
+<h3 class="titulo-tarefas">Minhas Tarefas</h3>
+
+
+<ul class="lista-tarefas" *ngIf="this.tasks.length > 0">
+
+    <li class="box-item" *ngFor="let task of tasks">
+      <span (click)="removeTask(task)" class="btn-remove-task">X</span>
+      <input #taskHTML type="text" name="" [value]="task.task">
+      <button (click)="editar(task, taskHTML)">Editar</button>
+    </li>
+
+</ul>
+
+<p class="text-sem-tarefa" *ngIf="this.tasks.length === 0">Nenhuma Tarefa</p>
+
+
+<section class="box-nova-tarefa">
+  <textarea #taskNewHTML placeholder="Digitar tarefa..."></textarea>
+  <button (click)="addTask(taskNewHTML)">Nova Tarefa</button>
+<section>
+
+
+
 
 
