@@ -1,5 +1,5 @@
-<h3>Login no sistema</h3>
 
+<!--
 <tr>
   <td colspan="2" style="text-align: center">
     {{ mensagemErro }}
@@ -39,4 +39,24 @@
     </td>
     </tr>
   </table>
+</form>
+-->
+
+<form (ngSubmit) = "onLogin()">
+    <h1>Login no sistema</h1>
+  <div>
+    <label>Usuário</label>
+    <input type="text" name="usuario" [(ngModel)]="usuario">
+  </div>
+  <div>
+    <label>Senha</label>
+    <input type="password" name="senha" [(ngModel)]="senha">
+  </div>
+
+  <section class="box-buttons">
+    <button  type="submit"> Entrar</button>
+    <a [routerLink]="['/register']"> Registrar</a>
+  </section>
+  
+  {{ mensagemErro }}
 </form>
