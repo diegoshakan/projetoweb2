@@ -54,6 +54,7 @@
 
 .box-item button {
 	width: 100px;
+	height: 40px;
 	color: #fff;
 	background-color: rgb(33, 65, 248);
 	border: none;
