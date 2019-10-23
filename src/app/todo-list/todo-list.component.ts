@@ -11,6 +11,7 @@ export class TodoListComponent implements OnInit {
 	ngOnInit() {}
 
 	addTask(taskHTML) {
+		if (taskHTML.value.length === 0) return;
 		if (this.tasks.length === 0) {
 			this.tasks.push({ id: 1, task: taskHTML.value });
 			taskHTML.value = '';
